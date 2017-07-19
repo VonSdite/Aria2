@@ -1,15 +1,15 @@
 # 百度云资源使用Aria2来下载（Chrome浏览器的方法）
 
-* [准备阶段](#jumpFirst)
+* [准备阶段](#user-content-准备阶段)
 
-* [如何进行下载](#jumpSecond)
+* [如何进行下载](#user-content-如何进行下载)
 
-* [配置环境变量的方法](#jumpThird)
+* [配置环境变量的方法](#user-content-配置环境变量的方法)
 
-* [解决 "请停用以开发者模式运行的扩展程序"](#jumpFourth)
+* [解决 "请停用以开发者模式运行的扩展程序"](#user-content-解决 "请停用以开发者模式运行的扩展程序)
 
 
-<span id="jumpFirst"></span>
+
 # 准备阶段
    
 1. 首先到aria2官网（https://aria2.github.io/） download aria2， 并将aria2目录设置到环境变量（为了方便使用）    
@@ -27,7 +27,7 @@
 -----
 
 
-<span id="jumpSecond"></span>
+
 # 如何进行下载    
 
  * 示例如图:   
@@ -48,7 +48,7 @@
 
 ----
 
-<span id="jumpThird"></span>
+
 # 配置环境变量的方法
 
 ![](配置环境变量.gif)   
@@ -57,7 +57,7 @@
 
 ----
 
-<span id="jumpFourth"></span>
+
 # 解决 "请停用以开发者模式运行的扩展程序"
 
 * 找到 Chrome的 chrome.dll所在的目录
