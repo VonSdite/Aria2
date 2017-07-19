@@ -62,6 +62,6 @@
 
 * 找到 Chrome的 chrome.dll所在的目录
 
-    ![](chromedll.png)
+* 将本项目中的 "chrome请停用开发者模式弹窗关闭"中的**chrome.dll.bat**和**chrome.dll.bak** 复制到该目录下, **并以管理员方式运行chrome.dll.bat**, 运行完即可解决问题
 
-* 将本项目中的 "chrome请停用开发者模式弹窗关闭" 复制到该目录下, **并以管理员方式运行chrome.dll.bat**, 运行完即可解决问题
+    ![](chromedll.png)
