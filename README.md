@@ -14,7 +14,7 @@
    
 1. 首先到aria2官网（https://aria2.github.io/） download aria2， 并将aria2目录设置到环境变量（为了方便使用）    
    
-    * [设置环境变量方法](#jumpThird)
+    * [设置环境变量方法](#user-content-配置环境变量的方法)
 
 2. 然后本项目的"chrome"文件夹保存到你的电脑中(Chrome的插件,要保存,不能删除)    
     
