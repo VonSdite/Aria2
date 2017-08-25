@@ -56,19 +56,33 @@ var showToast;
             showToast(request.message, request.type);
 
             var button = $("#export_menu");
+            var removeChild = Node.prototype.removeChild;
+            var after = jQuery.fn.after;
             if (button.length != 0) {
                 try {
-                    button.parent()[0].removeChild = function () {
-                        console.log("Remove me? Naive!");
+                    jQuery.fn.after = function() {
+                        node = [].concat.apply( [], arguments )[0];
+                        if ( node && node[0].id === "export_menu") {
+                            console.log("Fuck Baidu!");
+                        } else {
+                            return after.apply(this, arguments);
+                        }
+                    };
+                    button.parent()[0].removeChild = function (node) {
+                        if ( node.id === "export_menu") {
+                            console.log("Remove me? Naive!");
+                        } else {
+                            removeChild.apply(this, arguments);
+                        }
                     };
                     Object.defineProperty(button.parent()[0], "removeChild", { writable: false} );
+                    Object.defineProperty(jQuery.fn, "after", { writable: false} );
                 } catch (e) {
                     console.log("Unable to hook removeChild");
                 }
             }
         }
     });
-
     if (window.yunData) {
         if (window.yunData.sign2) {
             var yunData = window.require('disk-system:widget/data/yunData.js').get();

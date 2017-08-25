@@ -260,7 +260,7 @@
             "web": 1
         }), data, null, "json").done(function (json) {
             if (json.errno == -20) {
-                $.getJSON("/api/getcaptcha", {
+                $.getJSON(window.location.origin + "/api/getcaptcha", {
                     "prod": "share",
                     "bdstoken": yunData.MYBDSTOKEN,
                     "app_id": 250528,
@@ -289,13 +289,13 @@
                 if (yunData.SHAREPAGETYPE == "single_file_page") {
                     var item = json.list[0];
                     // For single file, save to filename.
-                    file_list.push({ name: yunData.FILENAME, link: item.dlink });
+                    file_list.push({ name: yunData.FILENAME, link: item.dlink, md5: item.md5 });
                 }
                 else {
                     // For multiple files, save relates to share base folder.
                     for (var i = 0;i<json.list.length;i++) {
                         var item = json.list[i];
-                        file_list.push({ name: item.path.substr(pathPrefixLength), link: item.dlink });
+                        file_list.push({ name: item.path.substr(pathPrefixLength), link: item.dlink, md5: item.md5 });
                     }
                 }
 
