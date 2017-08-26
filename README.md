@@ -1,6 +1,8 @@
-# 百度云资源使用Aria2来下载（Chrome浏览器的方法）
+# 百度云资源使用Aria2来下载
 
-* [准备阶段](#user-content-准备阶段)
+* [支持的浏览器](#user-cotent-支持的浏览器)
+
+* [配置插件](#user-content-配置插件)
 
 * [如何进行下载](#user-content-如何进行下载)
 
@@ -8,18 +10,34 @@
 
 * [解决 "请停用以开发者模式运行的扩展程序"](#user-content-解决-请停用以开发者模式运行的扩展程序)
 
+# 支持的浏览器
 
+### Chrome, Firefox, Edge 和 Safari：
 
-# 准备阶段
+* Chrome : Click **Settings** -> **Extensions** -> Check **Developer mode**-> **Load unpacked extension**, navigate to the `chrome` folder, click OK.
+* Firefox : Open **about:debugging** in Firefox, click "Load Temporary Add-on" and navigate to the `chrome` folder, select `manifest.json`, click OK.
+* Safari : Install Chrome or Firefox on Mac.
+* Edge: You need at least Windows 10 build 14342
+    1. Open [about:flags](about:flags), Check `Enable extension developer features`, Restart.
+    2. Clone repo to a local read-write folder.
+    3. Click **More(...)** -> **Extensions** -> **Load extension**, navigate to the `chrome` folder, click OK.
+
+# 配置插件
+
+***仅介绍 chrome 的中文配置，Firefox, Edge 和 Safari的配置请见上面英文***
    
-1. 首先到aria2官网（https://aria2.github.io/） download aria2， 并将aria2目录设置到环境变量（为了方便使用）    
-   
+1. 首先到github此处[Release](https://github.com/tatsuhiro-t/aria2/releases/)下载。 并将aria2目录设置到环境变量（为了方便使用）    
+
     * [设置环境变量方法](#user-content-配置环境变量的方法)
 
 2. 然后本项目的"chrome"文件夹保存到你的电脑中(Chrome的插件,要保存,不能删除)    
+    ** “ chrome ” 这个插件的转自: https://github.com/acgotaku/BaiduExporter **  
+
+    ** *感谢  [acgotaku](https://github.com/acgotaku)* **
     
 3. 打开Chrome浏览器的扩展程序，点“加载已解压的扩展程序”， 选择本项目中的"chrome"文件夹
    
+
 ![](1.png)   
     
 完成上述即可    
