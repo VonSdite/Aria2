@@ -1,6 +1,6 @@
 # 百度云资源使用Aria2来下载
 
-* [支持的浏览器](#user-cotent-支持的浏览器)
+* [支持的浏览器](#user-content-支持的浏览器)
 
 * [配置插件](#user-content-配置插件)
 
