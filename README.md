@@ -31,9 +31,9 @@
     * [设置环境变量方法](#user-content-配置环境变量的方法)
 
 2. 然后本项目的"chrome"文件夹保存到你的电脑中(Chrome的插件,要保存,不能删除)    
-    ** “ chrome ” 这个插件的转自: https://github.com/acgotaku/BaiduExporter **  
+    **“ chrome ” 这个插件的转自: https://github.com/acgotaku/BaiduExporter**  
 
-    ** *感谢  [acgotaku](https://github.com/acgotaku)* **
+    ***感谢  [acgotaku](https://github.com/acgotaku)***
     
 3. 打开Chrome浏览器的扩展程序，点“加载已解压的扩展程序”， 选择本项目中的"chrome"文件夹
    
