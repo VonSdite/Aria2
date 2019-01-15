@@ -38,7 +38,7 @@
 3. 打开Chrome浏览器的扩展程序，点“加载已解压的扩展程序”， 选择本项目中的"chrome"文件夹
    
 
-![](1.png)   
+![](README_IMG/1.png)   
     
 完成上述即可    
    
@@ -52,24 +52,24 @@
 
     **1. 启用插件([关于Chrome提示"请停用以开发者模式运行的扩展程序.."的解决办法](#user-content-解决-请停用以开发者模式运行的扩展程序))**
 
-    ![](2.png)   
+    ![](README_IMG/2.png)   
 
     **2. 打开一个资源(启用了插件就会出现"导出下载"的按钮,若没有出现,则刷新当前页面)**
 
-    ![](3.png)  
+    ![](README_IMG/3.png)  
 
     **3. 点击“导出下载”，复制文本框内的地址，打开控制台，粘贴复制的内容即开始下载（由于前面设置了环境变量，所以直接复制使用即可。 同时下载下来的文件是在当前控制台的地址，如图中的：E:\Movie中）**
 
-    ![](4.png)    
+    ![](README_IMG/4.png)    
 
-    ![](5.png)    
+    ![](README_IMG/5.png)    
 
 ----
 
 
 # 配置环境变量的方法
 
-![](配置环境变量.gif)   
+![](README_IMG/配置环境变量.gif)   
     
     
 
@@ -78,8 +78,4 @@
 
 # 解决 "请停用以开发者模式运行的扩展程序"
 
-* 找到 Chrome的 chrome.dll所在的目录
-
-* 将本项目中的 "chrome请停用开发者模式弹窗关闭"中的**chrome.dll.bat**和**chrome.dll.bak** 复制到该目录下, **并以管理员方式运行chrome.dll.bat**, 运行完即可解决问题
-
-    ![](chromedll.png)
+**见博文**: **[[Chrome 71版本]彻底解决Chrome请停用以开发者模式运行的扩展程序https://vonsdite.cn/posts/d0e30452.html](https://vonsdite.cn/posts/d0e30452.html)**, 备用地址: https://blog.csdn.net/VonSdite/article/details/86493684  
